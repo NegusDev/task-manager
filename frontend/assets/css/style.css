@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+html,
+body {
+  min-height: 100% !important;
+  font-family: "Open Sans", sans-serif !important;
+  /* overflow-x: hidden; */
+}
+
+
+.box {
+  border-radius: 0px;
+  background: #e0e0e0;
+  box-shadow: -5px -5px 13px #f0f0f8, 5px 5px 13px #f0f0f8 !important;
+  padding: 2.5rem 1rem !important;
+}
+
+.projects h5 {
+  font-size: 16px !important;
+}
+
+.left-side {
+  border-radius: 1rem !important;
+  z-index: 999;
+}
+.today-status {
+  border-radius: 1rem !important;
+  font-size: 12px;
+  background: #abe7b5bf !important;
+}
+
+.form-check label {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.upcoming-input {
+  border: none;
+  border-bottom: 2px solid #000;
+  border-radius: 0 !important;
+  outline: none !important;
+  
+  background: transparent !important;
+}
+.upcoming-input:focus {
+  outline: none !important;
+}
+
+.project-box {
+  cursor: pointer;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  /* background-color: #ddd; */
+  box-shadow: none !important;
+  outline: none;
+}
+.active {
+  /* background: transparent !important;. */
+  /* border: 2px solid red !important; */
+  color: #fff;
+  background: #1e282c;
+  /* box-shadow: -5px -5px 13px #fff, 5px 5px 13px #fff !important; */
+}
+.login-box {
+  box-shadow: -1px 2px 3px 3px rgba(219,219,219,0.75);
+  -webkit-box-shadow: -1px 2px 3px 3px rgba(219,219,219,0.75);
+  -moz-box-shadow: -1px 2px 3px 3px rgba(219,219,219,0.75);
+}
+.cart-btn {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+#select-tbl {
+  margin-bottom: 2.5rem;
+}
+
+.payment-methods h6 {
+  font-size:15px;
+  font-weight: bolder;
+}
+
+
+
+
+@keyframes animate {
+
+  from {
+    transform: scale(1, 0);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+
+tr .image-table {
+  position: relative;
+  width: 20px !important;
+  height: 20px !important;
+  
+}
+
+.search-result {
+  cursor: pointer;
+  transition: all .3s;
+}
+.search-result:hover {
+  background-color: #6a1a21;
+}
+
+
+tr .image-table img {
+  position: absolute !important;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  aspect-ratio: 16 / 9;
+  object-fit: cover !important;
+  border-radius: 2% !important;
+  bottom: 0;
+
+}
+#toast {
+  z-index: 999 !important;
+}
+
+@media print {
+  .receipts {
+    display: block;
+    width:80mm !important;
+    font-family: monospace !important;
+  }
+  .receipts .top {
+    margin:10px 0 !important;
+  }
+  .receipts h4 {
+    border-top:2px dotted black !important;
+    border-bottom:2px dotted black !important;
+    padding: 2px 0 !important;
+    text-align: center !important;
+    margin-bottom: 0px !important;
+  }
+  
+  .receipt-discount {
+    padding:0px !important;
+    margin:0px !important;
+  }
+  .receipt-total {
+    border-bottom:2px dotted black !important;
+    padding:0px !important;
+    margin:0px !important;
+  }
+  .receipt-total > div > span,
+  .receipt-discount > div > span {
+    padding:0px !important;
+    margin:0px !important;
+    font-size:12px !important;
+  }
+  .receipt-mid table tbody tr > td:nth-child(4) {
+    text-align: right !important;
+  
+  }
+  
+  .receipt-mid table tbody tr > td:nth-child(3) {
+    text-align: center !important;
+  }
+
+}
+
+
+
+ 
+
+
+
